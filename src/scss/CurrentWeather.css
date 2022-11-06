@@ -33,10 +33,12 @@ html {
 .CurrentWeather .infoplus h5 {
   font-size: 1.4rem;
 }
+.CurrentWeather .logoWeather-statu {
+  text-align: center;
+}
 .CurrentWeather .logoWeather-statu img {
   height: 5rem;
 }
 .CurrentWeather .logoWeather-statu h5 {
   margin-top: 1.2rem;
-  text-align: center;
 }/*# sourceMappingURL=CurrentWeather.css.map */

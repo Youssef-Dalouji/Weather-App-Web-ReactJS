@@ -124,7 +124,7 @@ let HomePage=() => {
         <div className="HomePage">
             <SideBar HandlerInput={HandlerInput} HandlerClick={HandlerClick} datacurrent={datacurrent} datacountry={datacountry} />
             <Body datahourly={datahourly} datacurrent={datacurrent} />
-            <img className="img-background" src={require('../img/Image Cases/03n.jpg')} alt="Back-ground" />
+            <img className="img-background" src={require(`../img/Image Cases/${datacurrent.weather[0].icon}.jpg`)} alt="Back-ground" />
             <div className="color-background"></div>
                 <ToastContainer
                 position="top-right"
