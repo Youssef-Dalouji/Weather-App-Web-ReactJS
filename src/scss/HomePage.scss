@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap');
+/*-------------------------------All-------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+}
+$color-weather:#2FA2A1;
+$color-weather2:#1E7A7F;
+$color-weather3:#0A4C57;
+  
+html {
+    font-size: 65.7%;
+}
+/*-------------------------------HomePage-------------------------------*/
+.HomePage{
+    .HomePageSpinners{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap:5rem;
+        img{
+            height: 7rem;
+        }
+        .child1{
+            color: $color-weather3;
+        }
+        .child2{
+            color: $color-weather2;
+        }
+        .child3{
+            color: $color-weather;
+        }
+    }
+    .img-background{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+    }
+    .color-background{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        background-color: rgba(0, 0, 0, 0.315);
+    }
+}
+

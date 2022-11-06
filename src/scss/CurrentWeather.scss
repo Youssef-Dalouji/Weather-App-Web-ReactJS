@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap');
+/*-------------------------------All-------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+}
+  
+html {
+    font-size: 65.7%;
+}
+/*-------------------------------CurrentWeather-------------------------------*/
+.CurrentWeather{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: 0 auto;
+    .degree{
+        font-size: 9rem;
+        margin-top: 1.5rem;
+    }
+    .infoplus{
+        text-align: center;
+        h1{
+            font-size: 4.9rem;
+        }
+        h5{
+            font-size: 1.4rem;
+        }
+    }
+    .logoWeather-statu{
+        img{
+            height: 5rem;
+        }
+        h5{
+            margin-top: 1.2rem;
+            text-align: center;
+        }
+    }
+}

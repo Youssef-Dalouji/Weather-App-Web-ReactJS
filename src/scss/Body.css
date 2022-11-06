@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap");
+/*-------------------------------All-------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.4rem;
+}
+
+html {
+  font-size: 65.7%;
+}
+
+/*-------------------------------Body-------------------------------*/
+.Body {
+  height: 100vh;
+  width: 71%;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.Body header {
+  padding: 1rem;
+}
+.Body header h1 {
+  font-size: 3.5rem;
+  font-weight: 400;
+}
+.Body .HourlyWeathermain .titre, .Body .DailyWeathermain .titre {
+  margin: 1rem;
+  font-size: 2rem;
+}
+.Body .HourlyWeathermain .info-hourly, .Body .DailyWeathermain .info-hourly {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+}
+.Body .HourlyWeathermain .info-daily, .Body .DailyWeathermain .info-daily {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  padding-top: 1.3rem;
+}
+.Body .HourlyWeathermain .info-daily::before, .Body .DailyWeathermain .info-daily::before {
+  content: "";
+  position: absolute;
+  left: 6.5rem;
+  top: -1.2rem;
+  height: 1px;
+  width: 90%;
+  border-top: 1px solid #fff;
+}/*# sourceMappingURL=Body.css.map */

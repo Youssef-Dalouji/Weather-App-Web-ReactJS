@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Silkscreen:wght@400;700&display=swap');
+/*-------------------------------All-------------------------------*/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.4rem;
+}
+  
+html {
+    font-size: 65.7%;
+}
+/*-------------------------------DailyWeather-------------------------------*/
+.DailyWeather{
+    border-radius: 0.5rem;
+    width: 11%;
+    padding:0rem 1rem;
+    background: rgba(255, 255, 255, 0);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7.6px);
+    -webkit-backdrop-filter: blur(7.6px);
+    img{
+        height: 4rem;
+    }
+    h2{
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+    span{
+        display: flex;
+        gap: 0.4rem;
+        .maxe{
+            font-size:2.4rem;
+        }
+        .mine{
+            font-size: 1.5rem;
+            margin-top: 0.8rem;
+        }
+    }
+    h3{
+        font-size: 1.3rem;
+        padding-bottom: 0.5rem;
+    }
+}
