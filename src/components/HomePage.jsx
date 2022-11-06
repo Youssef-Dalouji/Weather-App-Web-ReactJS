@@ -13,6 +13,7 @@ let HomePage=() => {
     let [datacountry,setDatacountry]=useState([])
     let [isloadingcurrentweather,setIsloadingcurrentweather]=useState(false)
     let [isloadingcountry,setIsloadingcountry]=useState(false)
+    let [errorverfication,setErrorverfication]=useState(false)
     let [isloadinghourlyweather,setIsloadinghourlyweather]=useState(false)
     let [codecountry,setCodecountry]=useState("MA")
     let [coordonnee,setCoordonnee]=useState({ "lon": -6.8401, "lat": 33.9911 })
@@ -30,8 +31,14 @@ let HomePage=() => {
         }else if(location.includes("script")){
             toast.info("professional hacker 🌞")
         }else{
-            setLocationexect(()=>{
-                return location.toLocaleLowerCase()
+            setLocationexect((prevstate)=>{
+                if(prevstate!==location){
+                    return location.toLocaleLowerCase()
+                }else{
+                    setErrorverfication(()=>{
+                        return true
+                    })
+                }
             })
             setIsloadingcurrentweather(()=>{
                 return false
@@ -76,7 +83,13 @@ let HomePage=() => {
         setIsloadinghourlyweather(()=>{
             return true
         })
-        toast.error("Location Name Error or Non-Existent")
+        if(!errorverfication){
+            toast.error("Location Name Error or Non-Existent")
+        }else{
+            setErrorverfication(()=>{
+                return false
+            })
+        }
       })
     },[locationexect])
     useEffect(()=>{
